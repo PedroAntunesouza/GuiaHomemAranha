@@ -4,7 +4,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-image: url(fundo.jpg);
+  background-image: url(../assets/fundo.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -198,5 +198,12 @@ button:hover {
 @media (max-width: 399px) and (min-width: 354px) {
   #textinho {
     margin-top: 24%;
+  }
+}
+
+/*dispositivo pequeno*/
+@media (max-width: 320px) {
+  #textinho {
+    margin-top: 27%;
   }
 }
