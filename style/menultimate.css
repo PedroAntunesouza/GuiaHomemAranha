@@ -4,9 +4,18 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-image: url(../assets/fundo.jpg);
+  background-image: url(../assets/background.jpg);
   background-size: cover;
   background-position: center;
+}
+
+img {
+  position: absolute;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 0;
+  bottom: 50px;
+  right: 80px;
 }
 
 header {
@@ -47,5 +56,9 @@ button:hover {
 }
 
 p {
+  font-size: 187%;
   margin-top: 9%;
+  color: #ff0000;
+  width: 50%;
+  word-wrap: break-word;
 }
