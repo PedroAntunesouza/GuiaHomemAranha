@@ -13,3 +13,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+const filmLink = document.getElementById("FilmAnim");
+
+filmLink.addEventListener("click", function () {
+  window.location.href = "./filme_animacao.html";
+});
+
+const gibiLink = document.getElementById("gibis");
+
+gibiLink.addEventListener("click", function () {
+  window.location.href = "./menuhqs.html";
+});
+
+const jogosLink = document.querySelector(".jogos");
+
+jogosLink.addEventListener("click", function () {
+  window.location.href = "./menujogo.html";
+});
