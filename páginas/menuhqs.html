@@ -3,19 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guia Homem-Aranha</title>
+    <title>Gibis Homem-Aranha</title>
     <link
       rel="stylesheet"
       type="text/css"
-      href="./style/menus.css"
+      href="../style/menus.css"
       media="screen"
     />
   </head>
   <body>
     <header>
-      <h1>Guia Homem-Aranha</h1>
+      <h1>Gibis Homem-Aranha</h1>
       <nav>
-        <button id="sobre-btn">Sobre</button>
+        <button class="nav-button" id="sobre-btn">Sobre</button>
+        <button
+          class="nav-button"
+          onclick="location.href = 'menuprincipal.html'"
+          ;
+        >
+          Voltar
+        </button>
       </nav>
       <div id="textinho" class="sobre">
         <p>
@@ -32,7 +39,7 @@
     <div class="container">
       <div class="butao">
         <div class="imagem">
-          <img src="./assets/616normal.jpg" alt="Universo 616" />
+          <img src="../assets/616normal.jpg" alt="Universo 616" />
         </div>
         <button onclick="location.href = 'menu616.html'">
           Universo principal
@@ -40,7 +47,7 @@
       </div>
       <div class="butao">
         <div class="imagem">
-          <img src="./assets/ultimate.jpg" alt="Universo Ultimate (2000)" />
+          <img src="../assets/ultimate.jpg" alt="Universo Ultimate (2000)" />
         </div>
         <button id="botao" onclick="location.href = 'menultimate.html'">
           Universo Ultimate
@@ -48,7 +55,10 @@
       </div>
       <div class="butao">
         <div class="imagem">
-          <img src="./assets/ultimate2024.jpg" alt="Universo Ultimate (2024)" />
+          <img
+            src="../assets/ultimate2024.jpg"
+            alt="Universo Ultimate (2024)"
+          />
         </div>
         <button onclick="location.href = 'menult2024.html'">
           Ultimate (2024)
@@ -56,7 +66,7 @@
       </div>
       <div class="butao">
         <div class="imagem">
-          <img src="./assets/histunica.jpg" alt="Histórias únicas" />
+          <img src="../assets/histunica.jpg" alt="Histórias únicas" />
         </div>
         <button onclick="location.href = 'menunico.html'">
           Histórias únicas
@@ -64,6 +74,6 @@
       </div>
       <div class="overlay"></div>
     </div>
-    <script src="./script/menu.js"></script>
+    <script src="../script/menu.js"></script>
   </body>
 </html>
