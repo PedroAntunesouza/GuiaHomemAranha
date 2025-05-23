@@ -69,13 +69,11 @@ button:hover {
   top: 77px;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
-  max-width: 600px;
+  width: 180%;
   background: rgb(250, 23, 23);
   padding: 15px;
   border-radius: 10px;
   box-shadow: #313131 5px 5px 5px;
-  display: none;
   margin-top: 3.6%;
 }
 
