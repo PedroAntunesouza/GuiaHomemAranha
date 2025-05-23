@@ -23,11 +23,17 @@ filmLink.addEventListener("click", function () {
 const gibiLink = document.getElementById("gibis");
 
 gibiLink.addEventListener("click", function () {
-  window.location.href = "./menuhqs.html";
+  window.location.href = "./menuHqs.html";
 });
 
 const jogosLink = document.querySelector(".jogos");
 
 jogosLink.addEventListener("click", function () {
-  window.location.href = "./menujogo.html";
+  window.location.href = "./menuJogo.html";
+});
+
+const extrasLink = document.querySelector("#extras");
+
+extrasLink.addEventListener("click", function () {
+  window.location.href = "./menuExtras.html";
 });
