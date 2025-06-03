@@ -64,7 +64,7 @@ p {
 }
 
 .LinkMidias {
-  position: fixed;
+  align-items: center;
   bottom: 20px;
   right: 580px;
   transition: transform 0.2s ease-in-out;
