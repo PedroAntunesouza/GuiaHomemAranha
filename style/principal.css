@@ -111,6 +111,22 @@ button:hover {
   flex-direction: column;
 }
 
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #ff0000;
+  color: white;
+  text-align: center;
+}
+
+#linkForm {
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
 /* laptop G */
 @media (max-width: 1440px) and (min-width: 1024.5px) {
   .imagem {

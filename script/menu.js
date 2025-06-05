@@ -37,3 +37,11 @@ const extrasLink = document.querySelector("#extras");
 extrasLink.addEventListener("click", function () {
   window.location.href = "./menuExtras.html";
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("enviar").addEventListener("click", function (e) {
+    e.preventDefault();
+    const mensagem = document.getElementById("resposta");
+    mensagem.classList.remove("hidden");
+  });
+});

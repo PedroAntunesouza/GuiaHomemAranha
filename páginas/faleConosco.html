@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fale Conosco!</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../style/faleConosco.css"
+      media="screen"
+    />
+    <script src="../script/menu.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Fale Conosco!</h1>
+      <nav>
+        <button onclick="location.href = 'menuPrincipal.html'"
+          class="nav-button">Voltar</button>
+      </nav>
+    </header>
+  <div id="formContainer">
+    <form id="sugestaoForm">
+      <label for="nome">Seu nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="mensagem">Sugestão:</label>
+      <textarea
+        id="mensagem"
+        placeholder="Alguma sugestão? Diga-nos..."
+        required
+      ></textarea>
+
+      <p>O que está achando do site?</p>
+      <div>
+        <label> Espatacular</label>
+        <input type="radio" class="avaliacao" value="Espetacular" />
+        <label> Muito bom</label>
+        <input type="radio" class="avaliacao" value="Muito bom" />
+        <label> Legal até</label>
+        <input type="radio" class="avaliacao" value="Legal até" />
+        <label> Bonzinho</label>
+        <input type="radio" class="avaliacao" value="Bonzinho" />
+        <label> Ok</label>
+        <input type="radio" class="avaliacao" value="Ok" />
+        <label> Não gostei</label>
+        <input type="radio" class="avaliacao" value="Não gostei" />
+      </div>
+
+      <button type="submit" id="enviar">Enviar</button>
+      <p id="resposta" class="hidden">Enviado com sucesso!</p>
+    </form>
+  </div>
+</footer>
+  </body>
+</html>

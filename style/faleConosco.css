@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.nav-button {
+  width: 5rem;
+  text-align: center;
+  background-color: #ff0000;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  margin-right: 20px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: rgb(0, 26, 255);
+  color: rgb(255, 255, 255);
+}
+
+#formContainer {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 100px; 
+  flex-direction: column;
+}
+
+#nome {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: text;
+  transition: 0.3s ease-in-out;
+}
+
+.avaliacao {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#mensagem {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#enviar {
+  margin-top: 10px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#enviar:hover {
+  background-color: rgb(0, 26, 255);
+  transform: scale(1.05);
+}
+
+#resposta {
+  margin-top: 100px;
+  color: green;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
