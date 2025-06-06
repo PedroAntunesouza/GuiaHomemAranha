@@ -10,7 +10,6 @@
       href="../style/faleConosco.css"
       media="screen"
     />
-    <script src="../script/menu.js"></script>
   </head>
   <body>
     <header>
@@ -22,36 +21,57 @@
     </header>
   <div id="formContainer">
     <form id="sugestaoForm">
-      <label for="nome">Seu nome:</label>
-      <input type="text" id="nome" name="nome" required />
+  <label for="nome">Seu nome:</label>
+  <input
+    type="text"
+    id="nome"
+    name="nome"
+    required
+    autocomplete="name"
+  />
 
-      <label for="mensagem">Sugestão:</label>
-      <textarea
-        id="mensagem"
-        placeholder="Alguma sugestão? Diga-nos..."
-        required
-      ></textarea>
+  <label for="email">Seu email:</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    required
+    autocomplete="email"
+  /> <br>
 
-      <p>O que está achando do site?</p>
-      <div>
-        <label> Espatacular</label>
-        <input type="radio" class="avaliacao" value="Espetacular" />
-        <label> Muito bom</label>
-        <input type="radio" class="avaliacao" value="Muito bom" />
-        <label> Legal até</label>
-        <input type="radio" class="avaliacao" value="Legal até" />
-        <label> Bonzinho</label>
-        <input type="radio" class="avaliacao" value="Bonzinho" />
-        <label> Ok</label>
-        <input type="radio" class="avaliacao" value="Ok" />
-        <label> Não gostei</label>
-        <input type="radio" class="avaliacao" value="Não gostei" />
-      </div>
+  <label for="mensagem">Sugestão:</label>
+  <textarea
+    id="mensagem"
+    name="mensagem"
+    placeholder="Alguma sugestão? Diga-nos..."
+    required
+  ></textarea>
 
-      <button type="submit" id="enviar">Enviar</button>
-      <p id="resposta" class="hidden">Enviado com sucesso!</p>
-    </form>
+  <p>O que está achando do site?</p>
+<div>
+  <label for="esp">Espetacular</label>
+  <input type="radio" class="avaliacao" id="esp" name="avaliacao" value="Espetacular" />
+
+  <label for="mb">Muito bom</label>
+  <input type="radio" class="avaliacao" id="mb" name="avaliacao" value="Muito bom" />
+
+  <label for="legal">Legal até</label>
+  <input type="radio" class="avaliacao" id="legal" name="avaliacao" value="Legal até" />
+
+  <label for="bonzinho">Bonzinho</label>
+  <input type="radio" class="avaliacao" id="bonzinho" name="avaliacao" value="Bonzinho" />
+
+  <label for="ok">Ok</label>
+  <input type="radio" class="avaliacao" id="ok" name="avaliacao" value="Ok" />
+
+  <label for="naoGostei">Não gostei</label>
+  <input type="radio" class="avaliacao" id="naoGostei" name="avaliacao" value="Não gostei" />
+</div>
+
+  <button type="submit" id="enviar">Enviar</button>
+</form>
+
   </div>
-</footer>
+    <script src="../script/faleConosco.js"></script>
   </body>
 </html>

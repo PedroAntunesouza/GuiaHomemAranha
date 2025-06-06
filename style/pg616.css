@@ -34,19 +34,19 @@ header {
 }
 
 button {
-  width: 50px;
-  height: 20px;
+  text-align: center;
+  border: none;
+  margin-right: 20px;
+  height: 23rem;
+  height: 2rem;
+  font-size: 1rem;
   background-color: rgb(255, 0, 0);
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 7px;
   margin-top: 0.5rem;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   border: none;
-  position: fixed;
-  top: 30px;
-  right: 0;
-  margin: 10px;
 }
 
 button:hover {

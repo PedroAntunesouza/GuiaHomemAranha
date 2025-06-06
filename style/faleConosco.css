@@ -24,6 +24,7 @@ header {
 }
 
 .nav-button {
+  flex-wrap: wrap;
   width: 5rem;
   text-align: center;
   background-color: #ff0000;
@@ -64,6 +65,16 @@ button:hover {
   transition: 0.3s ease-in-out;
 }
 
+#email {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: text;
+  transition: 0.3s ease-in-out;
+}
+
 .avaliacao {
   width: 100%;
   margin: 10px 0;
@@ -95,14 +106,4 @@ button:hover {
 #enviar:hover {
   background-color: rgb(0, 26, 255);
   transform: scale(1.05);
-}
-
-#resposta {
-  margin-top: 100px;
-  color: green;
-  font-weight: bold;
-}
-
-.hidden {
-  display: none;
 }
