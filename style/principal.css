@@ -20,7 +20,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
   z-index: 2;
 }
@@ -31,30 +30,37 @@ nav {
   width: 10%;
 }
 
-nav button {
+.sobre-btn {
   text-align: center;
   background-color: #ff0000;
+  color: #ffffff;
   border: none;
   cursor: pointer;
   font-size: 1rem;
   border-radius: 5px;
   transition: transform 0.2s ease-in-out;
-  margin-right: 20px;
+  margin-right: 1.5rem;
 }
 
-button {
+.sobre-btn:hover {
+  transform: scale(1.09);
+  background-color: rgb(0, 26, 255);
+  color: rgb(255, 255, 255);
+}
+
+.btn {
   height: 2rem;
   font-size: 1rem;
   background-color: rgb(255, 0, 0);
   color: #ffffff;
   border-radius: 10px;
-  margin-top: 0.5rem;
+  margin-top: 8px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   border: none;
 }   
 
-button:hover {
+.btn:hover {
   transform: scale(1.05);
   background-color: rgb(0, 26, 255);
   color: rgb(255, 255, 255);
@@ -102,7 +108,7 @@ button:hover {
   border-radius: 10px;
 }
 
-.butao {
+.selecao {
   display: flex;
   flex-direction: column;
 }
@@ -125,99 +131,63 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* laptop G */
 @media (max-width: 1440px) and (min-width: 1024.5px) {
   .imagem {
     justify-content: center;
     flex-direction: row;
-    margin-top: 40%;
-    width: 280px;
-    height: 375px;
-  }
-
-  button {
-    width: 280px;
-    height: 30px;
-    font-size: 20px;
-    margin-bottom: 20%;
-  }
-
-  #textinho {
-    margin-top: 3.4%;
-    width: 80%;
+    margin-top: 2rem;
   }
 }
 
-/* laptop */
 @media (max-width: 1024px) and (min-width: 768px) {
   .imagem {
     justify-content: center;
     flex-direction: row;
-    width: 180px;
-    height: 275px;
-  }
-
-  button {
-    width: 180px;
-  }
-
-  #textinho {
-    margin-top: 4.7%;
   }
 }
 
-/* tablet */
 @media (max-width: 768px) and (min-width: 425px) {
-  .imagem {
+  .sobre {
+    left: 0%;
     justify-content: center;
-    flex-direction: row;
-    width: 280px;
-    height: 375px;
+    margin-right: 50rem;
   }
-
-  button {
-    width: 280px;
-    margin-bottom: 10%;
-  }
-
-  #textinho {
-    margin-top: 6.3%;
-    width: 60%;
-  }
-}
-
-/*alinhamento do textinho que aparece de 424px pra baixo*/
-@media (max-width: 424px) and (min-width: 100px) {
-  #textinho {
-    position: fixed;
-    width: 60%;
-  }
-}
-
-/*dispositivo g*/
-@media (max-width: 425px) and (min-width: 376px) {
-  #textinho {
+  
+  #texto {
     margin-top: 11%;
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
   }
 }
 
-/*ajuste botão sobre*/
+@media (max-width: 424px) and (min-width: 100px) {
+  #texto {
+    position: static;
+    width: 80%;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+}
+
 @media (max-width: 399px) and (min-width: 354px) {
-  nav button {
+  .sobre-btn {
     margin-top: 100px;
   }
-}
 
-/*dispositivo M*/
-@media (max-width: 399px) and (min-width: 354px) {
-  #textinho {
-    margin-top: 24%;
+  #texto {
+    margin-top: 1.5rem;
   }
 }
 
-/*dispositivo pequeno*/
 @media (max-width: 320px) {
-  #textinho {
-    margin-top: 27%;
+  #texto {
+    margin-top: 1.7rem;
   }
 }

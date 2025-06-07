@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const sobreBtn = document.getElementById("sobre-btn");
-  const sobreTexto = document.getElementById("texto");
+  const sobreBtn = document.querySelector(".sobre-btn");
+  const sobreTexto = document.querySelector(".sobre");
 
   sobreBtn.addEventListener("click", function () {
     if (
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const filmLink = document.getElementById("FilmAnim");
 
-filmLink.addEventListener("click", function (e) {
+filmLink.addEventListener("click", function () {
   window.location.href = "./filme_animacao.html";
 });
 
@@ -26,13 +26,13 @@ gibiLink.addEventListener("click", function () {
   window.location.href = "./menuHqs.html";
 });
 
-const jogosLink = document.querySelector(".jogos");
+const jogosLink = document.getElementById("jogos");
 
 jogosLink.addEventListener("click", function () {
   window.location.href = "./menuJogo.html";
 });
 
-const extrasLink = document.querySelector("#extras");
+const extrasLink = document.getElementById("extras");
 
 extrasLink.addEventListener("click", function () {
   window.location.href = "./menuExtras.html";
