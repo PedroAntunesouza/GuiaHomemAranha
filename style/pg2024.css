@@ -7,13 +7,15 @@ body {
   background-image: url(../assets/background.jpg);
   background-size: cover;
   background-position: center;
+  flex-wrap: wrap;
 }
 
 img {
   position: absolute;
-  height: 32rem;
+  height: 35rem;
   bottom: 6rem;
   right: 5rem;
+  flex-wrap: wrap;
 }
 
 header {
@@ -57,7 +59,7 @@ p {
   width: 50%;
   flex-wrap: wrap;
   border-radius: 10px;
-
+  display: flex;
 }
 
 .LinkMidias {
@@ -66,3 +68,96 @@ p {
   right: 36rem;
 }
 
+
+@media (max-width: 1366px) {
+  p {
+    font-size: 1.6rem;
+  }
+
+  img {
+    top: 8rem;
+    height: 30rem;
+    right: 4rem;
+  }
+}
+
+@media (max-width: 1060px) {
+  p {
+    font-size: 1.1rem;
+  }
+
+  img {
+    top: 8rem;
+    height: 20rem;
+    right: 5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  p {
+    width: 90%;
+    font-size: 1.6rem;
+    margin: 9rem auto 2rem auto; 
+  }
+
+  img {
+    position: static; 
+    width: 60%;
+    height: auto;
+    margin: 0;
+    display: block;
+    align-items: flex-start;
+  }
+
+  .LinkMidias {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -40rem;
+    margin-right: 7rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 999px) {
+  .LinkMidias {
+    font-size: 1.5rem;
+    margin-top: -23rem;
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 820px) and (max-height: 1180px) {
+  p {
+    font-size: 2rem;
+    margin-top: 7rem;
+    width: 80%;
+  }
+
+  img {
+    height: 150%;
+  }
+
+  .LinkMidias{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 676px) {
+  .LinkMidias {
+    margin-top: -22rem;
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .LinkMidias {
+    margin-top: -15rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .LinkMidias {
+    font-size: 1rem;
+    margin-top: -10rem;
+  }
+}

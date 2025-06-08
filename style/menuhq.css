@@ -32,7 +32,7 @@ nav {
   gap: 10px; 
 }
 
-.sobre-btn {
+.volta-btn {
   text-align: center;
   background-color: #ff0000;
   color: #ffffff;
@@ -44,7 +44,7 @@ nav {
   margin-right: 1.5rem;
 }
 
-.sobre-btn:hover {
+.volta-btn:hover {
   transform: scale(1.09);
   background-color: rgb(0, 26, 255);
   color: rgb(255, 255, 255);
@@ -68,29 +68,12 @@ nav {
   color: rgb(255, 255, 255);
 }
 
-#texto {
-  position: absolute;
-  left: 50%;
-  top: 6.9rem;
-  transform: translateX(-50%);
-  width: 45rem;
-  background: rgb(250, 23, 23);
-  border-radius: 10px;
-  box-shadow: #313131 5px 5px 5px;
-  display: none;
-}
-
-.sobre {
-  display: flex;
-  align-items: center;
-}
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 12rem;
+  margin-top: 6rem;
   flex-wrap: wrap;
 }
 
@@ -98,7 +81,6 @@ nav {
   position: relative;
   width: 18rem;
   height: 23rem;
-  overflow: hidden;
   border-radius: 10px;
   box-shadow: #5e5e5e 5px 5px 5px;
 }
@@ -115,115 +97,22 @@ nav {
   flex-direction: column;
 }
 
-
-#linkForm {
-  width: 16rem;
-  background-color: #ff0000;
-  color: #ffffff;
-  text-decoration: underline;
-  cursor: pointer;
-  border-radius: 1rem;
-  display: inline-block;
-  margin-top: 6rem;
-  transition: transform 0.2s ease-in-out;
-}
-
-#linkForm:hover {
-  background-color: #001aff;
-  transform: scale(1.05);
-}
-
-/* laptop G */
-@media (max-width: 1440px) and (min-width: 1024.5px) {
+@media (max-width: 1440px){ 
   .imagem {
     justify-content: center;
     flex-direction: row;
-    margin-top: 40%;
-  }
-
-  button {
-    width: 280px;
-    height: 30px;
-    font-size: 20px;
-    margin-bottom: 20%;
-  }
-
-  #textinho {
-    margin-top: 3.4%;
-    width: 80%;
+    margin-top: 2rem;
   }
 }
 
-/* laptop */
-@media (max-width: 1024px) and (min-width: 768px) {
-  .imagem {
-    justify-content: center;
-    flex-direction: row;
-    width: 180px;
-    height: 275px;
-  }
-
-  button {
-    width: 180px;
-  }
-
-  #textinho {
-    margin-top: 4.7%;
+@media (max-width: 414px) and (min-width: 250px) {
+  nav {
+    margin-top: 4rem;
   }
 }
 
-/* tablet */
-@media (max-width: 768px) and (min-width: 425px) {
-  .imagem {
-    justify-content: center;
-    flex-direction: row;
-    width: 280px;
-    height: 375px;
-  }
-
-  button {
-    width: 280px;
-    margin-bottom: 10%;
-  }
-
-  #textinho {
-    margin-top: 6.3%;
-    width: 60%;
-  }
-}
-
-/*alinhamento do textinho que aparece de 424px pra baixo*/
-@media (max-width: 424px) and (min-width: 100px) {
-  #textinho {
-    position: fixed;
-    width: 60%;
-  }
-}
-
-/*dispositivo g*/
-@media (max-width: 425px) and (min-width: 376px) {
-  #textinho {
-    margin-top: 11%;
-  }
-}
-
-/*ajuste botão sobre*/
-@media (max-width: 399px) and (min-width: 354px) {
-  nav button {
-    margin-top: 100px;
-  }
-}
-
-/*dispositivo M*/
-@media (max-width: 399px) and (min-width: 354px) {
-  #textinho {
-    margin-top: 24%;
-  }
-}
-
-/*dispositivo pequeno*/
-@media (max-width: 320px) {
-  #textinho {
-    margin-top: 27%;
+@media (max-width: 363px) {
+  .container {
+    margin-top: 8rem;
   }
 }
