@@ -112,14 +112,14 @@ nav {
 
 
 #linkForm {
+  position: absolute;
   width: 16rem;
   background-color: #ff0000;
   color: #ffffff;
   text-decoration: underline;
   cursor: pointer;
   border-radius: 1rem;
-  display: inline-block;
-  margin-top: 2rem;
+  margin-top: 40rem;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -128,12 +128,17 @@ nav {
   transform: scale(1.05);
 }
 
-@media (max-width: 1440px){ 
+@media (max-width: 1600px){ 
   .imagem {
     justify-content: center;
     flex-direction: row;
     margin-top: 2rem;
   }
+}
+
+#linkForm {
+  position: static;
+  margin-top: 2rem;
 }
 
 @media (max-width: 395px) and (min-width: 364px) {

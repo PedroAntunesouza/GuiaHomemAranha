@@ -139,3 +139,9 @@ p {
     margin-top: -20rem;
   }
 }
+
+@media (max-width: 425px) {
+  p {
+    font-size: 15px;
+  }
+}

@@ -48,8 +48,8 @@ button:hover {
   padding: 20px;
   border-radius: 10px;
   width: 80%;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: auto;
   margin-top: 100px; 
   flex-direction: column;
 }
@@ -59,7 +59,7 @@ button:hover {
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: solid #ccc;
   cursor: text;
   transition: 0.3s ease-in-out;
 }
@@ -69,14 +69,20 @@ button:hover {
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: solid #ccc;
   cursor: text;
   transition: 0.3s ease-in-out;
 }
 
+.avContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .avaliacao {
-  width: 100%;
-  margin: 10px 0;
+  margin: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   cursor: pointer;
@@ -88,7 +94,7 @@ button:hover {
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: solid #ccc;
 }
 
 #enviar {
